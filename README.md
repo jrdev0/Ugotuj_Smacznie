@@ -8,6 +8,8 @@
 in future idea:
 
  print receipts
+ 
  calculate founds for meal
+ 
  prepare separate list for shopping
  
