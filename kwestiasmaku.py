@@ -6,7 +6,7 @@ import requests
 def wyszukiwarka_przepisow(przepisek):
     global tytul_przepisu
     tytul_przepisu = przepisek
-    headers = {'User_Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:85.0) Gecko/20100101 Firefox/85.0'}
+    headers = {'User_Agent': 'your user agent'}
     wyszukaj = f'https://www.kwestiasmaku.com/szukaj?search_api_views_fulltext={przepisek}'
     r = requests.get(wyszukaj, headers)
     soup = BeautifulSoup(r.content, 'html.parser')
